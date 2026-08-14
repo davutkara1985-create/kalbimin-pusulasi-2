@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #d3aa60;
+  --cream: #f4e5c5;
+  --ink: #020916;
+  --serif: "Cormorant Garamond", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html, body { width: 100%; min-height: 100%; margin: 0; background: var(--ink); }
+body { color: var(--cream); font-family: var(--serif); }
+button { font: inherit; }
+
+.exact-page {
+  width: 100vw;
+  height: 100vh;
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #020916;
+}
+
+.exact-stage {
+  position: relative;
+  width: min(100vw, calc(100vh * 1.7768331562));
+  aspect-ratio: 1672 / 941;
+  container-type: inline-size;
+  overflow: hidden;
+  background: #020916;
+}
+
+.exact-reference {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.third-card-title {
+  position: absolute;
+  z-index: 3;
+  left: 79.73%;
+  top: 38.28%;
+  width: 9.10%;
+  height: 4.66%;
+  display: grid;
+  place-items: center;
+  background: #061426;
+  color: #f1dfbd;
+  font-size: 1.48cqw;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.third-card-image {
+  position: absolute;
+  z-index: 3;
+  left: 79.25%;
+  top: 42.95%;
+  width: 9.63%;
+  height: 16.05%;
+  background: linear-gradient(rgba(2,9,19,.06), rgba(2,9,19,.2)), url("/images/dream-garden.webp") center / cover no-repeat;
+  box-shadow: inset 0 0 16px rgba(1,7,16,.45);
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 6;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.hotspot:focus-visible { outline: 3px solid #f2cf7b; outline-offset: 3px; border-radius: 8px; }
+.start-hotspot { left: 17.94%; top: 62.99%; width: 14.77%; height: 6.26%; border-radius: 999px; }
+.tarot-hotspot { left: 37.44%; top: 23.10%; width: 10.65%; height: 29.48%; }
+.coffee-hotspot { left: 57.89%; top: 34.57%; width: 10.71%; height: 29.27%; }
+.dream-hotspot { left: 78.77%; top: 34.57%; width: 10.65%; height: 29.27%; }
+
+.exact-toast {
+  position: absolute;
+  z-index: 20;
+  right: 2.2%;
+  bottom: 2.4%;
+  padding: .72cqw 1.05cqw;
+  border: 1px solid rgba(211,170,96,.8);
+  border-radius: .8cqw;
+  background: rgba(4,17,36,.96);
+  box-shadow: 0 15px 40px rgba(0,0,0,.4);
+  color: var(--cream);
+  font-size: 1.05cqw;
+}
+
+@media (max-aspect-ratio: 4 / 5) {
+  .exact-page { align-items: start; min-height: 100vh; overflow: auto; }
+  .exact-stage { width: 100vw; margin-top: 12vh; }
+  .third-card-title { font-size: 1.48cqw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
