@@ -23,9 +23,9 @@ export default function Home() {
         <div className="third-card-image" aria-hidden="true" />
 
         <button className="hotspot start-hotspot" type="button" aria-label="Yolculuğa Başla" onClick={() => announce("Yolculuğun başlıyor")} />
-        <button className="hotspot tarot-hotspot" type="button" aria-label="Tarot, 75 Jeton" onClick={() => announce("Tarot seçildi")} />
-        <button className="hotspot coffee-hotspot" type="button" aria-label="Kahve Falı, 50 Jeton" onClick={() => announce("Kahve Falı seçildi")} />
-        <button className="hotspot dream-hotspot" type="button" aria-label="Rüya Tabirleri, 100 Jeton" onClick={() => announce("Rüya Tabirleri seçildi")} />
+        <button className="hotspot tarot-hotspot" type="button" aria-label="Tarot" onClick={() => announce("Tarot seçildi")} />
+        <button className="hotspot coffee-hotspot" type="button" aria-label="Kahve Falı" onClick={() => announce("Kahve Falı seçildi")} />
+        <button className="hotspot dream-hotspot" type="button" aria-label="Rüya Tabirleri" onClick={() => announce("Rüya Tabirleri seçildi")} />
 
         {message && <div className="exact-toast" role="status">✦ {message}</div>}
       </section>
