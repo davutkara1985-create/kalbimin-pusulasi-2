@@ -41,6 +41,33 @@ button { font: inherit; }
   pointer-events: none;
 }
 
+/* Yalnızca kırmızı kalp hareket eder; pusula, ışınlar ve rota sabit kalır. */
+.heart-beat {
+  position: absolute;
+  z-index: 2;
+  left: 22.19%;
+  top: 43.48%;
+  width: 4.90%;
+  height: 9.35%;
+  object-fit: fill;
+  pointer-events: none;
+  transform-origin: 50% 48%;
+  clip-path: polygon(
+    50% 96%, 39% 84%, 27% 72%, 16% 59%, 8% 46%, 5% 34%,
+    7% 24%, 13% 16%, 22% 11%, 31% 10%, 40% 14%, 50% 23%,
+    60% 14%, 69% 10%, 78% 11%, 87% 16%, 93% 24%, 95% 34%,
+    92% 46%, 84% 59%, 73% 72%, 61% 84%
+  );
+  animation: heart-beat-pulse 1.65s ease-in-out infinite;
+}
+
+@keyframes heart-beat-pulse {
+  0%, 38%, 100% { transform: scale(1); }
+  9% { transform: scale(1.045); }
+  17% { transform: scale(1); }
+  25% { transform: scale(1.025); }
+}
+
 .third-card-title {
   position: absolute;
   z-index: 3;
@@ -104,4 +131,5 @@ button { font: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; }
+  .heart-beat { animation: none; }
 }

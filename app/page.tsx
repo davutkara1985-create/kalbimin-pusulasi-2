@@ -19,6 +19,13 @@ export default function Home() {
           alt="Kalbimin Pusulası yolculuk haritası"
         />
 
+        <img
+          className="heart-beat"
+          src="/images/heart-only.png"
+          alt=""
+          aria-hidden="true"
+        />
+
         <div className="third-card-title" aria-hidden="true">Rüya Tabirleri</div>
         <div className="third-card-image" aria-hidden="true" />
 

@@ -1,24 +1,24 @@
-# Aşama 2 — Yolculuğa Başla Butonunu Kaldırma
+# Aşama 3 — Kalp Atışı Efekti
 
-Bu pakette yalnızca üç güncel dosya bulunmaktadır:
+Bu pakette yalnızca iki güncel dosya bulunmaktadır:
 
 - `app/page.tsx`
 - `app/globals.css`
-- `public/images/approved-home-reference.png`
 
 ## GitHub'a yükleme
 
 1. Paketteki `app/page.tsx` dosyasını GitHub deponuzdaki `app/page.tsx` dosyasının üzerine yükleyin.
 2. Paketteki `app/globals.css` dosyasını GitHub deponuzdaki `app/globals.css` dosyasının üzerine yükleyin.
-3. Paketteki `public/images/approved-home-reference.png` dosyasını GitHub deponuzdaki `public/images/approved-home-reference.png` dosyasının üzerine yükleyin.
-4. Commit açıklamasına `Aşama 2 - Yolculuğa Başla butonunu kaldır` yazın.
-5. `Commit changes` düğmesine basın.
-6. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
+3. Commit açıklamasına `Aşama 3 - Kalbe atış efekti ekle` yazın.
+4. `Commit changes` düğmesine basın.
+5. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
 
 ## Bu aşamada değişenler
 
-- Görseldeki `Yolculuğa Başla` butonu kaldırıldı ve arkasındaki harita dokusu tamamlandı.
-- Butona ait görünmez tıklama alanı kaldırıldı.
-- Butona ait kullanılmayan CSS kuralı kaldırıldı.
+- Yalnızca kırmızı kalbe hafif çift vuruş animasyonu eklendi.
+- Animasyon katmanı kalbin dış hatları içinde kırpıldı.
+- Pusula çemberi ve altın ışınlar animasyona dahil edilmedi.
+- Kalbe kutu, daire veya gölge eklenmedi.
+- Hareket azaltma ayarı kullanan ziyaretçilerde animasyon otomatik olarak durur.
 
-Kalp, parlak rota, kartlar, menü, fontlar ve diğer tasarım alanları değiştirilmemiştir.
+Ana referans görseli ve diğer görsel dosyaları değiştirilmemiştir.
