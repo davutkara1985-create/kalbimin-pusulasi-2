@@ -19,13 +19,16 @@ button { font: inherit; }
   display: grid;
   place-items: center;
   overflow: hidden;
-  background: #020916;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(12,37,70,.78), rgba(2,9,22,.96) 58%),
+    #020916;
 }
 
 .exact-stage {
   position: relative;
-  width: max(100vw, calc(100vh * 1.7768331562));
-  height: max(100vh, calc(100vw / 1.7768331562));
+  width: min(100vw, calc(100vh * 1.7768331562));
+  height: min(100vh, calc(100vw / 1.7768331562));
+  aspect-ratio: 1672 / 941;
   flex: none;
   container-type: inline-size;
   overflow: hidden;
@@ -87,7 +90,7 @@ button { font: inherit; }
   width: 9.25%;
   height: 4.10%;
   color: #e8dfd0;
-  font-size: 1.12cqw;
+  font-size: .82cqw;
 }
 .small-nav-label-1 { top: 25.55%; }
 .small-nav-label-2 { top: 33.90%; }
@@ -95,21 +98,67 @@ button { font: inherit; }
 .small-nav-label-4 { top: 50.60%; }
 .small-nav-label-5 { top: 58.95%; }
 
+.journey-heading {
+  position: absolute;
+  z-index: 4;
+  left: 43.50%;
+  top: 12.75%;
+  width: 25%;
+  height: 5.5%;
+  display: grid;
+  place-items: center;
+  color: #f1dfbd;
+  font-size: 1.55cqw;
+  font-weight: 500;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.status-shell {
+  position: absolute;
+  z-index: 3;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+.streak-shell-image {
+  left: 72.35%;
+  top: 2.55%;
+  width: 8.45%;
+}
+.balance-shell-image {
+  right: 2.05%;
+  top: 2.45%;
+  width: 11.55%;
+}
+
 .small-status-label {
-  top: 4.25%;
-  height: 3.65%;
+  top: 3.25%;
+  height: 3.15%;
   justify-content: center;
-  font-size: .96cqw;
+  font-size: .72cqw;
 }
 .streak-label {
-  left: 72.55%;
-  width: 7.50%;
+  left: 74.35%;
+  width: 5.75%;
   color: #52d5d2;
 }
 .balance-label {
-  left: 86.15%;
-  width: 6.65%;
+  left: 87.25%;
+  width: 5.10%;
   color: #f1dfbd;
+}
+
+.daily-streak-panel {
+  position: absolute;
+  z-index: 4;
+  left: 34.00%;
+  bottom: 1.55%;
+  width: 48.00%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
 }
 
 .journey-map {
@@ -121,8 +170,8 @@ button { font: inherit; }
 
 .journey-card {
   position: absolute;
-  width: 8.40%;
-  height: 29.00%;
+  width: 6.60%;
+  height: 22.00%;
   padding: 0;
   overflow: visible;
   border: 0;
@@ -136,7 +185,7 @@ button { font: inherit; }
   content: "";
   position: absolute;
   z-index: 4;
-  inset: .32cqw;
+  inset: .22cqw;
   border: 1px solid rgba(211,170,96,.27);
   clip-path: polygon(7% 0, 93% 0, 100% 5%, 100% 95%, 93% 100%, 7% 100%, 0 95%, 0 5%);
   pointer-events: none;
@@ -145,20 +194,20 @@ button { font: inherit; }
   content: "◆";
   position: absolute;
   left: 50%;
-  bottom: -.72cqw;
+  bottom: -.50cqw;
   z-index: 5;
   transform: translateX(-50%);
   color: #d3aa60;
-  font-size: .62cqw;
+  font-size: .44cqw;
   line-height: 1;
   text-shadow: 0 0 .45cqw rgba(238,197,111,.55);
 }
-.journey-card-1 { left: 35.80%; top: 26.20%; }
-.journey-card-2 { left: 45.20%; top: 34.00%; }
-.journey-card-3 { left: 54.60%; top: 28.60%; }
-.journey-card-4 { left: 64.00%; top: 34.80%; }
-.journey-card-5 { left: 73.40%; top: 27.20%; }
-.journey-card-6 { left: 82.80%; top: 34.00%; }
+.journey-card-1 { left: 36.80%; top: 28.50%; }
+.journey-card-2 { left: 45.80%; top: 34.00%; }
+.journey-card-3 { left: 54.80%; top: 29.80%; }
+.journey-card-4 { left: 63.80%; top: 34.80%; }
+.journey-card-5 { left: 72.80%; top: 29.00%; }
+.journey-card-6 { left: 81.80%; top: 34.00%; }
 
 .journey-surface {
   position: absolute;
@@ -166,17 +215,17 @@ button { font: inherit; }
   overflow: hidden;
   border: 1px solid rgba(211,170,96,.92);
   background: #061426;
-  box-shadow: 0 .65cqw 1.7cqw rgba(0,0,0,.34), inset 0 0 0 1px rgba(238,203,128,.12);
+  box-shadow: 0 .42cqw 1.15cqw rgba(0,0,0,.30), inset 0 0 0 1px rgba(238,203,128,.10);
   clip-path: polygon(7% 0, 93% 0, 100% 5%, 100% 95%, 93% 100%, 7% 100%, 0 95%, 0 5%);
 }
 
 .journey-number {
   position: absolute;
   left: 50%;
-  top: -1.18cqw;
+  top: -.86cqw;
   z-index: 7;
-  width: 2.15cqw;
-  height: 2.15cqw;
+  width: 1.58cqw;
+  height: 1.58cqw;
   display: grid;
   place-items: center;
   transform: translateX(-50%);
@@ -185,20 +234,20 @@ button { font: inherit; }
   background: #061426;
   box-shadow: 0 0 .55cqw rgba(220,176,91,.22);
   color: #f0d49b;
-  font-size: .92cqw;
+  font-size: .68cqw;
   line-height: 1;
 }
 .journey-title {
   position: relative;
   z-index: 3;
-  height: 17%;
+  height: 18%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .30cqw .38cqw 0;
+  padding: .18cqw .24cqw 0;
   border-bottom: 1px solid rgba(211,170,96,.56);
   background: rgba(4,15,31,.96);
-  font-size: .96cqw;
+  font-size: .69cqw;
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;
@@ -207,7 +256,7 @@ button { font: inherit; }
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 83%;
+  height: 82%;
   display: block;
   object-fit: cover;
   object-position: center;
@@ -216,7 +265,7 @@ button { font: inherit; }
 .journey-card:hover,
 .journey-card:focus-visible {
   z-index: 10;
-  transform: translateY(-.32cqw);
+  transform: translateY(-.22cqw);
   outline: none;
   filter: brightness(1.04);
 }

@@ -40,8 +40,15 @@ export default function Home() {
         <div className="small-nav-label small-nav-label-3" aria-hidden="true">Yolculuklarım</div>
         <div className="small-nav-label small-nav-label-4" aria-hidden="true">Cüzdan</div>
         <div className="small-nav-label small-nav-label-5" aria-hidden="true">Profil</div>
+
+        <div className="journey-heading" aria-hidden="true">Yolculuğunu seç</div>
+
+        <img className="status-shell streak-shell-image" src="/images/streak-shell.png" alt="" aria-hidden="true" />
+        <img className="status-shell balance-shell-image" src="/images/balance-shell.png" alt="" aria-hidden="true" />
         <div className="small-status-label streak-label" aria-hidden="true">4 günlük seri</div>
         <div className="small-status-label balance-label" aria-hidden="true">125 Jeton</div>
+
+        <img className="daily-streak-panel" src="/images/daily-streak-panel.png" alt="7 Günlük Giriş Serisi" />
 
         <div className="journey-map" aria-label="Yolculuk seçenekleri">
           {journeys.map((journey, index) => (
