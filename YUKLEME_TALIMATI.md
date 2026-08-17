@@ -1,25 +1,24 @@
-# Aşama 1 — Kart Fiyatlarını Kaldırma
+# Aşama 2 — Yolculuğa Başla Butonunu Kaldırma
 
-Bu pakette yalnızca iki güncel dosya bulunmaktadır:
+Bu pakette yalnızca üç güncel dosya bulunmaktadır:
 
 - `app/page.tsx`
+- `app/globals.css`
 - `public/images/approved-home-reference.png`
 
 ## GitHub'a yükleme
 
-Dosyaları GitHub'da paketteki klasör yapısını koruyarak yükleyin:
-
-1. `app` klasöründeki `page.tsx` dosyasını GitHub deponuzdaki `app/page.tsx` dosyasının üzerine yükleyin.
-2. `public/images` klasöründeki `approved-home-reference.png` dosyasını GitHub deponuzdaki `public/images/approved-home-reference.png` dosyasının üzerine yükleyin.
-3. Commit açıklamasına `Aşama 1 - Kart jeton yazılarını kaldır` yazın.
-4. `Commit changes` düğmesine basın.
-5. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
+1. Paketteki `app/page.tsx` dosyasını GitHub deponuzdaki `app/page.tsx` dosyasının üzerine yükleyin.
+2. Paketteki `app/globals.css` dosyasını GitHub deponuzdaki `app/globals.css` dosyasının üzerine yükleyin.
+3. Paketteki `public/images/approved-home-reference.png` dosyasını GitHub deponuzdaki `public/images/approved-home-reference.png` dosyasının üzerine yükleyin.
+4. Commit açıklamasına `Aşama 2 - Yolculuğa Başla butonunu kaldır` yazın.
+5. `Commit changes` düğmesine basın.
+6. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
 
 ## Bu aşamada değişenler
 
-- Tarot kartındaki `75 Jeton` satırı kaldırıldı.
-- Kahve Falı kartındaki `50 Jeton` satırı kaldırıldı.
-- Üçüncü karttaki `100 Jeton` satırı kaldırıldı.
-- Bu fiyatları içeren erişilebilirlik etiketleri temizlendi.
+- Görseldeki `Yolculuğa Başla` butonu kaldırıldı ve arkasındaki harita dokusu tamamlandı.
+- Butona ait görünmez tıklama alanı kaldırıldı.
+- Butona ait kullanılmayan CSS kuralı kaldırıldı.
 
-Alt bölümdeki 7 günlük giriş serisi ödülleri değiştirilmemiştir.
+Kalp, parlak rota, kartlar, menü, fontlar ve diğer tasarım alanları değiştirilmemiştir.

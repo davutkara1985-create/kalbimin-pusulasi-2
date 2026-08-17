@@ -78,7 +78,6 @@ button { font: inherit; }
   cursor: pointer;
 }
 .hotspot:focus-visible { outline: 3px solid #f2cf7b; outline-offset: 3px; border-radius: 8px; }
-.start-hotspot { left: 17.94%; top: 62.99%; width: 14.77%; height: 6.26%; border-radius: 999px; }
 .tarot-hotspot { left: 37.44%; top: 23.10%; width: 10.65%; height: 29.48%; }
 .coffee-hotspot { left: 57.89%; top: 34.57%; width: 10.71%; height: 29.27%; }
 .dream-hotspot { left: 78.77%; top: 34.57%; width: 10.65%; height: 29.27%; }
