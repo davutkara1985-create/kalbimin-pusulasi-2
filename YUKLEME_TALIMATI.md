@@ -1,24 +1,26 @@
-# Aşama 3 — Kalp Atışı Efekti
+# Aşama 4 — Kontrollü Font Küçültme ve Tam Ekran
 
-Bu pakette yalnızca iki güncel dosya bulunmaktadır:
+Bu pakette yalnızca üç güncel dosya bulunmaktadır:
 
 - `app/page.tsx`
 - `app/globals.css`
+- `public/images/approved-home-reference.png`
 
 ## GitHub'a yükleme
 
 1. Paketteki `app/page.tsx` dosyasını GitHub deponuzdaki `app/page.tsx` dosyasının üzerine yükleyin.
 2. Paketteki `app/globals.css` dosyasını GitHub deponuzdaki `app/globals.css` dosyasının üzerine yükleyin.
-3. Commit açıklamasına `Aşama 3 - Kalbe atış efekti ekle` yazın.
-4. `Commit changes` düğmesine basın.
-5. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
+3. Paketteki `public/images/approved-home-reference.png` dosyasını GitHub deponuzdaki `public/images/approved-home-reference.png` dosyasının üzerine yükleyin.
+4. Commit açıklamasına `Aşama 4 - Fontları küçült ve tam ekran yap` yazın.
+5. `Commit changes` düğmesine basın.
+6. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
 
 ## Bu aşamada değişenler
 
-- Yalnızca kırmızı kalbe hafif çift vuruş animasyonu eklendi.
-- Animasyon katmanı kalbin dış hatları içinde kırpıldı.
-- Pusula çemberi ve altın ışınlar animasyona dahil edilmedi.
-- Kalbe kutu, daire veya gölge eklenmedi.
-- Hareket azaltma ayarı kullanan ziyaretçilerde animasyon otomatik olarak durur.
+- Sol menü yazıları kontrollü biçimde küçültüldü.
+- `4 günlük seri` ve `125 Jeton` yazıları küçültüldü.
+- Sayfa, ekran oranına göre kenarlarda boşluk bırakmadan tam ekran kaplama davranışına geçirildi.
 
-Ana referans görseli ve diğer görsel dosyaları değiştirilmemiştir.
+Kart başlıkları, `Yolculuğunu seç`, giriş serisi, kalp animasyonu, parlak rota ve diğer tasarım alanları değiştirilmemiştir.
+
+Not: Tam ekran kaplama sırasında ekranın en-boy oranı referans tasarımdan çok farklıysa görüntünün üst-alt veya sağ-sol uçlarından küçük bir bölüm kırpılabilir. Görüntü oranı bozulmaz.

@@ -26,6 +26,14 @@ export default function Home() {
           aria-hidden="true"
         />
 
+        <div className="small-nav-label small-nav-label-1" aria-hidden="true">Pusulam</div>
+        <div className="small-nav-label small-nav-label-2" aria-hidden="true">Keşfet</div>
+        <div className="small-nav-label small-nav-label-3" aria-hidden="true">Yolculuklarım</div>
+        <div className="small-nav-label small-nav-label-4" aria-hidden="true">Cüzdan</div>
+        <div className="small-nav-label small-nav-label-5" aria-hidden="true">Profil</div>
+        <div className="small-status-label streak-label" aria-hidden="true">4 günlük seri</div>
+        <div className="small-status-label balance-label" aria-hidden="true">125 Jeton</div>
+
         <div className="third-card-title" aria-hidden="true">Rüya Tabirleri</div>
         <div className="third-card-image" aria-hidden="true" />
 
