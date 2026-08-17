@@ -1,26 +1,38 @@
-# Aşama 4 — Kontrollü Font Küçültme ve Tam Ekran
+# Aşama 5 — Altı Yolculuk Kartı
 
-Bu pakette yalnızca üç güncel dosya bulunmaktadır:
+Bu pakette dört güncel dosya bulunmaktadır:
 
 - `app/page.tsx`
 - `app/globals.css`
 - `public/images/approved-home-reference.png`
+- `public/images/katina-cards.webp`
 
 ## GitHub'a yükleme
 
 1. Paketteki `app/page.tsx` dosyasını GitHub deponuzdaki `app/page.tsx` dosyasının üzerine yükleyin.
 2. Paketteki `app/globals.css` dosyasını GitHub deponuzdaki `app/globals.css` dosyasının üzerine yükleyin.
-3. Paketteki `public/images/approved-home-reference.png` dosyasını GitHub deponuzdaki `public/images/approved-home-reference.png` dosyasının üzerine yükleyin.
-4. Commit açıklamasına `Aşama 4 - Fontları küçült ve tam ekran yap` yazın.
-5. `Commit changes` düğmesine basın.
-6. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
+3. Paketteki `public/images/approved-home-reference.png` dosyasını GitHub deponuzdaki aynı dosyanın üzerine yükleyin.
+4. Paketteki yeni `public/images/katina-cards.webp` dosyasını GitHub deponuzdaki `public/images` klasörüne yükleyin.
+5. Commit açıklamasına `Aşama 5 - Altı yolculuk kartını ekle` yazın.
+6. `Commit changes` düğmesine basın.
+7. Vercel dağıtımı tamamlandıktan sonra sayfayı `Ctrl + F5` ile yenileyin.
+
+## Kart sırası
+
+1. Tarot
+2. Katina
+3. Kahve Falı
+4. Rüya Tabirleri
+5. Doğum Haritası
+6. Ruh Eşi
 
 ## Bu aşamada değişenler
 
-- Sol menü yazıları kontrollü biçimde küçültüldü.
-- `4 günlük seri` ve `125 Jeton` yazıları küçültüldü.
-- Sayfa, ekran oranına göre kenarlarda boşluk bırakmadan tam ekran kaplama davranışına geçirildi.
+- Üç eski kart ana arka plandan kaldırıldı; merkezi harita ve parlak rota tamamlandı.
+- Altı kart aynı lacivert–antik altın çerçeve diliyle kod katmanı olarak eklendi.
+- Kart numaraları kırpılmayacak şekilde bağımsız rozet katmanına yerleştirildi.
+- Kartların altında jeton veya fiyat bulunmaz.
+- Her karta tıklama, hover ve basma geri bildirimi eklendi.
+- Katina için Tarot'tan farklı, metinsiz özgün bir görsel eklendi.
 
-Kart başlıkları, `Yolculuğunu seç`, giriş serisi, kalp animasyonu, parlak rota ve diğer tasarım alanları değiştirilmemiştir.
-
-Not: Tam ekran kaplama sırasında ekranın en-boy oranı referans tasarımdan çok farklıysa görüntünün üst-alt veya sağ-sol uçlarından küçük bir bölüm kırpılabilir. Görüntü oranı bozulmaz.
+Menü, üst bilgiler, kalp animasyonu, tam ekran davranışı ve giriş serisi korunmuştur.

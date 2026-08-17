@@ -112,46 +112,123 @@ button { font: inherit; }
   color: #f1dfbd;
 }
 
-.third-card-title {
+.journey-map {
   position: absolute;
-  z-index: 3;
-  left: 79.73%;
-  top: 38.28%;
-  width: 9.10%;
-  height: 4.66%;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.journey-card {
+  position: absolute;
+  width: 8.40%;
+  height: 29.00%;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  color: #f1dfbd;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+.journey-card::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  inset: .32cqw;
+  border: 1px solid rgba(211,170,96,.27);
+  clip-path: polygon(7% 0, 93% 0, 100% 5%, 100% 95%, 93% 100%, 7% 100%, 0 95%, 0 5%);
+  pointer-events: none;
+}
+.journey-card::after {
+  content: "◆";
+  position: absolute;
+  left: 50%;
+  bottom: -.72cqw;
+  z-index: 5;
+  transform: translateX(-50%);
+  color: #d3aa60;
+  font-size: .62cqw;
+  line-height: 1;
+  text-shadow: 0 0 .45cqw rgba(238,197,111,.55);
+}
+.journey-card-1 { left: 35.80%; top: 26.20%; }
+.journey-card-2 { left: 45.20%; top: 34.00%; }
+.journey-card-3 { left: 54.60%; top: 28.60%; }
+.journey-card-4 { left: 64.00%; top: 34.80%; }
+.journey-card-5 { left: 73.40%; top: 27.20%; }
+.journey-card-6 { left: 82.80%; top: 34.00%; }
+
+.journey-surface {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border: 1px solid rgba(211,170,96,.92);
+  background: #061426;
+  box-shadow: 0 .65cqw 1.7cqw rgba(0,0,0,.34), inset 0 0 0 1px rgba(238,203,128,.12);
+  clip-path: polygon(7% 0, 93% 0, 100% 5%, 100% 95%, 93% 100%, 7% 100%, 0 95%, 0 5%);
+}
+
+.journey-number {
+  position: absolute;
+  left: 50%;
+  top: -1.18cqw;
+  z-index: 7;
+  width: 2.15cqw;
+  height: 2.15cqw;
   display: grid;
   place-items: center;
+  transform: translateX(-50%);
+  border: 1px solid #d3aa60;
+  border-radius: 50%;
   background: #061426;
-  color: #f1dfbd;
-  font-size: 1.48cqw;
-  font-weight: 500;
+  box-shadow: 0 0 .55cqw rgba(220,176,91,.22);
+  color: #f0d49b;
+  font-size: .92cqw;
+  line-height: 1;
+}
+.journey-title {
+  position: relative;
+  z-index: 3;
+  height: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .30cqw .38cqw 0;
+  border-bottom: 1px solid rgba(211,170,96,.56);
+  background: rgba(4,15,31,.96);
+  font-size: .96cqw;
+  font-weight: 600;
   line-height: 1;
   white-space: nowrap;
 }
-
-.third-card-image {
-  position: absolute;
-  z-index: 3;
-  left: 79.25%;
-  top: 42.95%;
-  width: 9.63%;
-  height: 16.05%;
-  background: linear-gradient(rgba(2,9,19,.06), rgba(2,9,19,.2)), url("/images/dream-garden.webp") center / cover no-repeat;
-  box-shadow: inset 0 0 16px rgba(1,7,16,.45);
+.journey-image {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 83%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.92) contrast(1.03);
 }
-
-.hotspot {
-  position: absolute;
-  z-index: 6;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
+.journey-card:hover,
+.journey-card:focus-visible {
+  z-index: 10;
+  transform: translateY(-.32cqw);
+  outline: none;
+  filter: brightness(1.04);
 }
-.hotspot:focus-visible { outline: 3px solid #f2cf7b; outline-offset: 3px; border-radius: 8px; }
-.tarot-hotspot { left: 37.44%; top: 23.10%; width: 10.65%; height: 29.48%; }
-.coffee-hotspot { left: 57.89%; top: 34.57%; width: 10.71%; height: 29.27%; }
-.dream-hotspot { left: 78.77%; top: 34.57%; width: 10.65%; height: 29.27%; }
+.journey-card:hover .journey-surface,
+.journey-card:focus-visible .journey-surface {
+  border-color: #efd28b;
+  box-shadow: 0 .85cqw 2cqw rgba(0,0,0,.43), 0 0 1.05cqw rgba(215,169,80,.25);
+}
+.journey-card:active {
+  transform: translateY(-.08cqw) scale(.975);
+  filter: brightness(.94);
+}
 
 .exact-toast {
   position: absolute;
